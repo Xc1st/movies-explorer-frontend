@@ -1,0 +1,19 @@
+.container__hero-intro {
+    display: flex;
+    gap: 15%;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .container__hero-intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .container__hero-intro {
+        gap: 44px;
+    }
+}

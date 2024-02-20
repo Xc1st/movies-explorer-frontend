@@ -1,0 +1,18 @@
+.profile__input-cont {
+    border-bottom: 1px solid #424242;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+.profile__input-cont:last-of-type{
+    border: none;
+    margin-bottom: 188px;
+    padding: 16px 0 0 0;
+}
+@media screen and (max-width: 660px) {
+    .profile__input-cont:last-of-type {
+        padding: 16px 0 0 0;
+        margin-bottom: 379px;
+    }
+}

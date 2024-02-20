@@ -1,0 +1,12 @@
+.header__button {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-style: normal;
+    background-color: transparent;
+    color: white;
+    grid-area: buttons;
+}

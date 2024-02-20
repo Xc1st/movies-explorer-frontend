@@ -1,0 +1,43 @@
+.backline__link{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 28px;
+    position: relative;
+    max-width: max-content;
+    transition: all .4s;
+}
+
+.backline__link:last-of-type{
+    margin-bottom: 50vh;
+}
+@media screen and (max-width:500px) {
+    .backline__link:last-of-type {
+        margin-bottom: 444px;
+    }
+}
+
+.backline__link::after{
+    content: '';
+    width: 3%;
+    height: 2px;
+    background-color:#fff;
+    opacity: 0;
+    z-index: 15;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transition: all .6s;
+    border-radius: 3px;
+}
+
+.backline__link:hover::after{
+    content: '';
+    width: 100%;
+    opacity: 1;
+    left: 0;
+}
+
+.backline__link:hover{
+    opacity: 0.7;
+}
