@@ -5,7 +5,7 @@ export default function Technology(){
                 <h2 className="technology__title">Технологии</h2>
                 <div className="underline technology__underline"></div>
                 <div className="technology__about">
-                    <h2 className="technology__about-title">7 технологий</h2>
+                    <h3 className="technology__about-title">7 технологий</h3>
                     <p className="technology__caption">На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
                     <ul className="technology__lists">
                         <li className="technology__list">HTML</li>

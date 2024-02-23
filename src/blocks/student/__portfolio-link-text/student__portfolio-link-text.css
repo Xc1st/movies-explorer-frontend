@@ -1,4 +1,5 @@
 .student__portfolio-link-text {
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 30px;

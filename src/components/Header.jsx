@@ -35,12 +35,12 @@ export default function Header({ black }) {
         <>
             <header className={`header ${black ? 'header__black' : ''}`}>
                 <div className="container container_header">
-                    <Link to="/"><img className="header__logo" src={logo} /></Link>
+                    <Link to="/"><img className="header__logo" src={logo} alt="Логотип"/></Link>
                     {loggedIn ?
                         <>
                             <div className="header__films">
                                 <Link to="/films" className={`header__button header__button_type_films button ${isActiveFilms ? "header__button_active" : ''}`} onClick={activeFilms}> Фильмы </Link>
-                                <Link to="/saved-films" className={`header__button header__button_type_saved-films button ${isActiveSavedFilms ? "header__button_active" : ''}`}onClick={activeSavedFilms}> Сохранённые фильмы </Link>
+                                <Link to="/saved-films" className={`header__button header__button_type_saved-films button ${isActiveSavedFilms ? "header__button_active" : ''}`} onClick={activeSavedFilms}> Сохранённые фильмы </Link>
                             </div>
                         </>
                         :
@@ -50,10 +50,10 @@ export default function Header({ black }) {
                             <>
                                 <Link to='/profile' className="header__button header__button_type_account account button">
                                     <p className={`header__profile ${black ? 'header__profile_black' : ''}`}>Аккаунт</p>
-                                    <img className={`header__profile-pic ${black ? 'header__profile-pic_black' : ''}`} src={profile} />
+                                    <img className={`header__profile-pic ${black ? 'header__profile-pic_black' : ''}`} src={profile} alt="Картинка профиля"/>
                                 </Link>
-                                <button className={`header__backline backline ${isVisible ? "backline_active" : ''}`} onClick={backline}>
-                                    <img src={isVisible ? cross : backlineFoto} alt="backline" className="header__line" />
+                                <button type="button" className={`header__backline backline ${isVisible ? "backline_active" : ''}`} onClick={backline}>
+                                    <img src={isVisible ? cross : backlineFoto} alt="Боковое меню" className="header__line"/>
                                 </button>
                             </>
                             :
@@ -63,15 +63,15 @@ export default function Header({ black }) {
                             </>}
                     </div>
                 </div >
-                <nav className={`backline__menu ${isVisible ? 'backline__menu_visible' : ''}`}>
-                    <div className="backline__links">
-                        <Link to="/" className="backline__link" onClick={backline}>Главная</Link>
-                        <Link to="/films" className="backline__link" onClick={backline}>Фильмы</Link>
-                        <Link to="/saved-films" className="backline__link" onClick={backline}>Сохраненные фильмы</Link>
+                <nav className={`backline-menu ${isVisible ? 'backline-menu_visible' : ''}`}>
+                    <div className="backline-menu__links">
+                        <Link to="/" className="backline-menu__link" onClick={backline}>Главная</Link>
+                        <Link to="/films" className="backline-menu__link" onClick={backline}>Фильмы</Link>
+                        <Link to="/saved-films" className="backline-menu__link" onClick={backline}>Сохраненные фильмы</Link>
                     </div>
-                    <Link to="/profile" className="backline__profile-button account" onClick={backline}>
-                        <p className='backline__profile account__subtitle account__subtitle_black' >Аккаунт</p>
-                        <img className='backline__profile-picture account__picture account__picture_black' src={profile} />
+                    <Link to="/profile" className="backline-menu__profile-button account" onClick={backline}>
+                        <p className='backline-menu__profile account__subtitle account__subtitle_black' >Аккаунт</p>
+                        <img className='backline-menu__profile-picture account__picture account__picture_black' src={profile} alt="Картинка профиля" />
                     </Link>
                 </nav>
             </header >

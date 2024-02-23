@@ -7,10 +7,15 @@
 }
 .profile__input-cont:last-of-type{
     border: none;
-    margin-bottom: 188px;
+    margin-bottom: 220px;
     padding: 16px 0 0 0;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
+    .profile__input-cont:last-of-type {
+        margin-bottom: 210px;
+    }
+}
+@media screen and (max-width: 550px) {
     .profile__input-cont:last-of-type {
         padding: 16px 0 0 0;
         margin-bottom: 379px;

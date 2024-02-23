@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="page">
+    <main className="page">
       <Routes>
         <Route
           path='/'
@@ -38,7 +38,7 @@ function App() {
         <Route path="*" element={<NFEPage />} />
       </Routes>
 
-    </div >
+    </main >
   )
 }
 export default App

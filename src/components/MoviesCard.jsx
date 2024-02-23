@@ -6,13 +6,13 @@ export default function MoviesCard({ films }) {
     }
     return (
         <li className="search-films__card card">
-            <img src={image} alt="" className="card__img" />
+            <img src={image} alt="Мальчик с папироской" className="card__img" />
             <div className="card__banner">
                 <div className="card__text">
                     <h3 className="card__title">33 слова о дизайне</h3>
                     <p className="card__time">1ч42м</p>
                 </div>
-                <button className={`card__submit ${films ? '' : 'card__submit_x'}`} onClick={films ? cardLike : ''}>{films ? '' : "+"}</button>
+                <button type="button" className={`card__submit ${films ? '' : 'card__submit_x'}`} onClick={films ? cardLike : ''}>{films ? '' : "+"}</button>
             </div>
         </li>
     )

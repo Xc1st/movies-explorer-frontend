@@ -4,11 +4,11 @@ export default function Form({ name, children, titleButton, onSubmit }) {
         <form onSubmit={onSubmit} className="form">
             <div>{children}</div>
             {name === 'sign-in' || name === 'sign-up' ?
-                <button className="login__button">
+                <button type="submit" className="login__button">
                     {titleButton}
                 </button>
                 :
-                <button className="profile__save">
+                <button type="submit" className="profile__save">
                     {titleButton}
                 </button>
             }

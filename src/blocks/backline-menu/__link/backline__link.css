@@ -1,4 +1,4 @@
-.backline__link{
+.backline-menu__link{
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -8,16 +8,16 @@
     transition: all .4s;
 }
 
-.backline__link:last-of-type{
+.backline-menu__link:last-of-type{
     margin-bottom: 50vh;
 }
 @media screen and (max-width:500px) {
-    .backline__link:last-of-type {
+    .backline-menu__link:last-of-type {
         margin-bottom: 444px;
     }
 }
 
-.backline__link::after{
+.backline-menu__link::after{
     content: '';
     width: 3%;
     height: 2px;
@@ -31,13 +31,13 @@
     border-radius: 3px;
 }
 
-.backline__link:hover::after{
+.backline-menu__link:hover::after{
     content: '';
     width: 100%;
     opacity: 1;
     left: 0;
 }
 
-.backline__link:hover{
+.backline-menu__link:hover{
     opacity: 0.7;
 }

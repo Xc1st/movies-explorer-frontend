@@ -10,7 +10,7 @@ export default function EntryPage({ name, children }) {
         <section className="login">
             <div className="container container_login">
                 <Link to={'/'} className="login__logo"><img src={logo} alt="" /></Link>
-                <h2 className='login__subtitle'>{name === 'sign-up' ? 'Добро пожаловать!' : 'Рады видеть!'}</h2>
+                <h1 className='login__subtitle'>{name === 'sign-up' ? 'Добро пожаловать!' : 'Рады видеть!'}</h1>
                 <Form
                     name={name}
                     children={children}

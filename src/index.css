@@ -32,14 +32,12 @@
 
 /* backline */
 @import url(./blocks/backline/backline.css);
-@import url(./blocks/backline/__link/backline__link.css);
-@import url(./blocks/backline/__links/backline__links.css);
-@import url(./blocks/backline/__menu/backline__menu.css);
-@import url(./blocks/backline/__menu/_visible/backline__menu_visible.css);
 @import url(./blocks/backline/_active/backline_active.css);
-/* underline */
-@import url(./blocks/underline/underline.css);
-@import url(./blocks/underline/_dark/underline_dark.css);
+/* backline-menu */
+@import url(./blocks/backline-menu/backline-menu.css);
+@import url(./blocks/backline-menu/_visible/backline-menu_visible.css);
+@import url(./blocks/backline-menu/__link/backline__link.css);
+@import url(./blocks/backline-menu/__links/backline__links.css);
 /* container */
 @import url(./blocks/container/container.css);
 @import url(./blocks/container/_header/container_header.css);
@@ -71,7 +69,6 @@
 @import url(./blocks/about/__timelearn-text/about__timelearn-text.css);
 @import url(./blocks/about/__timelearn/about__timelearn.css);
 @import url(./blocks/about/__title/about__title.css);
-@import url(./blocks/about/__underline/about__underline.css);
 /* technology */
 @import url(./blocks/technology/technology.css);
 @import url(./blocks/technology/__about/technology__about.css);
@@ -80,7 +77,6 @@
 @import url(./blocks/technology/__list/technology__list.css);
 @import url(./blocks/technology/__lists/technology__lists.css);
 @import url(./blocks/technology/__title/technology__title.css);
-@import url(./blocks/technology/__underline/technology__underline.css);
 /* student */
 @import url(./blocks/student/student.css);
 @import url(./blocks/student/__about/student__about.css);
@@ -95,7 +91,6 @@
 @import url(./blocks/student/__portfolio-title/student__portfolio-title.css);
 @import url(./blocks/student/__profession/student__profession.css);
 @import url(./blocks/student/__title/student__title.css);
-@import url(./blocks/student/__underline/student__underline.css);
 @import url(./blocks/student/__name/student__name.css);
 /* footer */
 @import url(./blocks/footer/footer.css);
@@ -142,7 +137,7 @@
 
 @import url(./blocks/search-string/search-string.css);
 @import url(./blocks/search-string/__box/search-films__box.css);
-@import url(./blocks/search-string/__button/search-films__button.css);
+@import url(./blocks/search-string/__button/search-string__button.css);
 @import url(./blocks/search-string/__input/search-string__input.css);
 @import url(./blocks/search-string/__shorts/search-films__shorts.css);
 @import url(./blocks/search-string/__shorts-button/search-films__shorts-button.css);

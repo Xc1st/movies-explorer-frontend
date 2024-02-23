@@ -1,4 +1,4 @@
-.about_timelearn-text{
+.about__timelearn-text{
     color: #8B8B8B;
     font-size: 14px;
     font-weight: 500;
@@ -6,7 +6,7 @@
     margin: 0;
 }
 @media screen and (max-width: 660px) {
-    .about_timelearn-text{
+    .about__timelearn-text{
         font-size: 11px;
         font-weight: 400;
         line-height: 121%;

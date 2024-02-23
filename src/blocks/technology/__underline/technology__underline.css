@@ -1,8 +1,0 @@
-.technology__underline {
-    margin: 0 0 90px 0;
-}
-@media screen and (max-width: 660px) {
-    .technology__underline {
-        margin: 0 0 60px 0;
-    }
-}
