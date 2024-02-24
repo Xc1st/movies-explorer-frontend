@@ -20,6 +20,7 @@
 }
 @media screen and (max-width: 660px) {
     .hero-intro__title {
+        letter-spacing: -0.04em;
         margin: 0 0 22px 0;
         font-size: 30px;
         line-height: 127%;

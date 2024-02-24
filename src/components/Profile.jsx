@@ -8,6 +8,7 @@ export default function Profile({ name }) {
         <>
             <Header
                 black={true} />
+                <main>
             <section className="profile">
                 <div className="container container_profile">
                     <h1 className="profile__title"> Привет, {name}</h1>
@@ -26,6 +27,7 @@ export default function Profile({ name }) {
                     <Link to="/sign-in" className="profile__exit button">Выйти из аккаунта</Link>
                 </div>
             </section>
+            </main>
         </>
     )
 }

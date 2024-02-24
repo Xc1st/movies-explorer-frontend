@@ -9,10 +9,12 @@ export default function MainPage() {
     return (
         <>
             <Header />
+            <main>
             <HeroIntro />
             <About />
             <Technology />
             <Student />
+            </main>
             <Footer />
         </>
     )

@@ -26,7 +26,7 @@
 @import url(./blocks/header/__profile-pic/_black/header__profile-pic_black.css);
 @import url(./blocks/header/__profile/header__profile.css);
 @import url(./blocks/header/__profile/_black/header__profile_black.css);
-@import url(./blocks/header/__black/header__black.css);
+@import url(./blocks/header/_black/header_black.css);
 @import url(./blocks/header/__button/_active/header__button_active.css);
 
 
@@ -136,13 +136,13 @@
 
 
 @import url(./blocks/search-string/search-string.css);
-@import url(./blocks/search-string/__box/search-films__box.css);
+@import url(./blocks/search-string/__box/search-string__box.css);
 @import url(./blocks/search-string/__button/search-string__button.css);
 @import url(./blocks/search-string/__input/search-string__input.css);
-@import url(./blocks/search-string/__shorts/search-films__shorts.css);
-@import url(./blocks/search-string/__shorts-button/search-films__shorts-button.css);
+@import url(./blocks/search-string/__shorts/search-string__shorts.css);
+@import url(./blocks/search-string/__shorts-button/search-string__shorts-button.css);
 @import url(./blocks/search-string/__shorts-button/_active/search-string__shorts-button_active.css);
-@import url(./blocks/search-string/__shorts-subtitle/search-films__shorts-subtitle.css);
+@import url(./blocks/search-string/__shorts-subtitle/search-string__shorts-subtitle.css);
 
 @import url(./blocks/card/card.css);
 @import url(./blocks/card/__banner/card__banner.css);

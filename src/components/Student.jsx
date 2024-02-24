@@ -6,7 +6,6 @@ export default function Student() {
         <section className="student">
             <div className="container container_student">
                 <h2 className="student__title">Студент</h2>
-                <div className="underline student__underline"></div>
                 <div className="student__info">
                     <div className="student__info-about">
                         <h2 className="student__name">Даниил</h2>
@@ -21,8 +20,9 @@ export default function Student() {
                     <ul className="student__portfolio-links">
                         <li className="student__portfolio-link">
                             <a href="https://xc1st.github.io/russian-travel/" target="_blank" rel="noreferrer" className="student__portfolio-link-text link">Статичный сайт</a>
-                            <a href="https://xc1st.github.io/russian-travel/" className="student__portfolio-link-icon" target="_blank" rel="noreferrer"></a>
+                            <a href="https://xc1st.github.io/russian-travel/" className="student__portfolio-link-icon" target="_blank" rel="noreferrer">
                             <img src={arrow} alt="Стрелочка" />
+                            </a>
                         </li>
                         <li className="student__portfolio-link">
                             <a href="https://xc1st.github.io/russian-travel/" target="_blank" rel="noreferrer" className="student__portfolio-link-text link" >Адаптивный сайт</a>

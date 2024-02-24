@@ -7,6 +7,7 @@ import logo from '../images/logo.svg'
 
 export default function EntryPage({ name, children }) {
     return (
+        <main>
         <section className="login">
             <div className="container container_login">
                 <Link to={'/'} className="login__logo"><img src={logo} alt="" /></Link>
@@ -29,5 +30,6 @@ export default function EntryPage({ name, children }) {
                 }
             </div>
         </section>
+        </main>
     )
 }

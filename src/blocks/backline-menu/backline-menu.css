@@ -9,7 +9,6 @@
     z-index: 9;
     padding: 159px 0 0 0;
     transition: all .5s;
-    z-index: 1;
 }
 .backline-menu::after{
     z-index: 0;
@@ -24,6 +23,7 @@
 }
 @media screen and (max-width:500px) {
     .backline-menu {
+        padding: 144px 0 0 0;
         width: 100%;
     }
 }

@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:769px){
     .backline-menu_visible{
         display: none;
     }

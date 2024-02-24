@@ -1,4 +1,5 @@
 .container_hero-intro {
+    justify-content: space-between;
     display: flex;
     gap: 15%;
     padding: 0;

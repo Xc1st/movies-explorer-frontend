@@ -13,6 +13,7 @@ export default function SearchFilms({ films }) {
         <>
             <Header
                 black={true} />
+                <main>
             <section className="search-films">
                 <div className="container container_search-films">
                     <form className="search-films__search-string search-string">
@@ -43,6 +44,7 @@ export default function SearchFilms({ films }) {
                 </div>
                 <button type="button" className="search-films__more button">Ещё</button>
             </section>
+            </main>
             <Footer />
         </>
     )
