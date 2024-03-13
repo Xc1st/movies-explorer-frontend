@@ -2,28 +2,14 @@
 import { useState } from "react";
 import logo from '../images/logo.svg'
 import profile from '../images/profile.svg'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import backlineFoto from '../images/backline.png'
 import cross from '../images/x.png'
 
-export default function Header({ black }) {
-    const [loggedIn, setLoggedIn] = useState(true)
+export default function Header({ black, loggedIn }) {
     const [isVisible, setIsVisible] = useState(false)
-    const [isActiveFilms, setIsActiveFilms] = useState(false)
-    const [isActiveSavedFilms, setIsActiveSavedFilms] = useState(false)
+    const location = useLocation()
 
-    function activeFilms() {
-        setIsActiveFilms(true)
-        setIsActiveSavedFilms(false)
-    }
-    function activeSavedFilms() {
-        setIsActiveSavedFilms(true)
-        setIsActiveFilms(false)
-    }
-
-    function onSignIn() {
-        setLoggedIn(false)
-    }
     function backline() {
         if (isVisible) {
             setIsVisible(false)
@@ -39,8 +25,8 @@ export default function Header({ black }) {
                     {loggedIn ?
                         <>
                             <div className="header__films">
-                                <Link to="/films" className={`header__button header__button_type_films  ${isActiveFilms ? "header__button_active" : ''}`} onClick={activeFilms}> Фильмы </Link>
-                                <Link to="/saved-films" className={`header__button header__button_type_saved-films  ${isActiveSavedFilms ? "header__button_active" : ''}`} onClick={activeSavedFilms}> Сохранённые фильмы </Link>
+                                <Link to="/movies" className={`header__button ${location.pathname === '/movies' ? 'header__button_active' : ''} header__button_type_films `}> Фильмы </Link>
+                                <Link to="/saved-movies" className={`header__button ${location.pathname === '/saved-movies' ? 'header__button_active' : ''} header__button_type_saved-films`}> Сохранённые фильмы </Link>
                             </div>
                         </>
                         :
@@ -58,16 +44,16 @@ export default function Header({ black }) {
                             </>
                             :
                             <>
-                                <Link className="header__button header__button_type_signup button" onClick={onSignIn} to="/sign-up"> Регистрация </Link>
-                                <Link className="header__button header__button_type_signin button" onClick={onSignIn} to="/sign-in"> Войти</Link>
+                                <Link className="header__button header__button_type_signup button" to="/signup"> Регистрация </Link>
+                                <Link className="header__button header__button_type_signin button" to="/signin"> Войти</Link>
                             </>}
                     </div>
                 </div >
                 <nav className={`backline-menu ${isVisible ? 'backline-menu_visible' : ''}`}>
                     <div className="backline-menu__links">
-                        <Link to="/" className="backline-menu__link" onClick={backline}>Главная</Link>
-                        <Link to="/films" className="backline-menu__link" onClick={backline}>Фильмы</Link>
-                        <Link to="/saved-films" className="backline-menu__link" onClick={backline}>Сохраненные фильмы</Link>
+                        <Link to="/" className={`backline-menu__link ${location.pathname === '/' ? 'backline-menu__link_active' : ''}`} onClick={backline}>Главная</Link>
+                        <Link to="/movies" className={`backline-menu__link ${location.pathname === '/movies' ? 'backline-menu__link_active' : ''}`} onClick={backline}>Фильмы</Link>
+                        <Link to="/saved-movies" className={`backline-menu__link ${location.pathname === '/saved-movies' ? 'backline-menu__link_active' : ''}`} onClick={backline}>Сохраненные фильмы</Link>
                     </div>
                     <Link to="/profile" className="backline-menu__profile-button account" onClick={backline}>
                         <p className='backline-menu__profile account__subtitle account__subtitle_black' >Аккаунт</p>

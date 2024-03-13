@@ -5,15 +5,17 @@ import Student from './Student'
 import Footer from './Footer'
 import Header from './Header'
 
-export default function MainPage() {
+export default function MainPage({ loggedIn }) {
     return (
         <>
-            <Header />
+            <Header
+                loggedIn={loggedIn} 
+                />
             <main>
-            <HeroIntro />
-            <About />
-            <Technology />
-            <Student />
+                <HeroIntro />
+                <About />
+                <Technology />
+                <Student />
             </main>
             <Footer />
         </>
