@@ -6,6 +6,7 @@ import Input from "./Input";
 import CurrentUserContext from "../contexts/CurrentUserContext";
 import useFormValidation from "../hooks/useFormValidation";
 import Form from "./Form";
+import { EmailRegex } from "../utils/constants";
 
 export default function Profile({ name, loggedIn, logOut, editUserData, setIsError, isSuccess, setIsSuccess, setIsEdit, isEdit }) {
     const currentUser = useContext(CurrentUserContext)
@@ -47,8 +48,8 @@ export default function Profile({ name, loggedIn, logOut, editUserData, setIsErr
                                 <Input
                                     placeholder={'Введите имя'}
                                     value={values.username}
-                                    isInputValid={isInputValid.email}
-                                    error={errors.email}
+                                    isInputValid={isInputValid.username}
+                                    error={errors.username}
                                     onChange={handleChange}
                                     name='username'
                                     disabled={isEdit ? false : true} />
@@ -60,6 +61,7 @@ export default function Profile({ name, loggedIn, logOut, editUserData, setIsErr
                                     value={values.email}
                                     isInputValid={isInputValid.email}
                                     error={errors.email}
+                                    pattern={EmailRegex}
                                     onChange={handleChange}
                                     required
                                     name='email'
