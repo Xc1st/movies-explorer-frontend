@@ -1,6 +1,6 @@
 const EmailRegex = "^\\S+@\\S+\\.\\S+$"
 const MaxScreen = 1161
-const MediumScreen = 950
+const MediumScreen = 1001
 const SmallScreen = 665
 const CardsMoreMaxScreen = 16
 const CardsLessMaxScreen = 12

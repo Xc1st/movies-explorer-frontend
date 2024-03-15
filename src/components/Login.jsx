@@ -2,6 +2,7 @@
 import EntryPage from './EntryPage';
 import Input from './Input';
 import useFormValidation from "../hooks/useFormValidation";
+import { EmailRegex } from '../utils/constants';
 
 export default function Login({ name, setIsError, onSignIn }) {
     const { values, errors, isInputValid, isValid, handleChange } = useFormValidation()
@@ -19,6 +20,7 @@ export default function Login({ name, setIsError, onSignIn }) {
                 minLength={2}
                 maxLength={30}
                 required
+                pattern={EmailRegex}
                 name={'email'}
                 type={'email'}
                 placeholder={'Введите Email'}
