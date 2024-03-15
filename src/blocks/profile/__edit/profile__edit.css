@@ -1,0 +1,10 @@
+.profile__edit{
+    font-size: 13px;
+    background: transparent;
+    color: #fff;
+    padding: 0;
+    border: none;
+    margin: 0 auto 16px;
+    text-align: center;
+    display: block;
+}

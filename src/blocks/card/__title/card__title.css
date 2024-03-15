@@ -1,0 +1,8 @@
+.card__title{
+    width: 220px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+}
